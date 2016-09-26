@@ -1,0 +1,8 @@
+.DS_Store
+*.swp
+*.log
+.vagrant
+www/*
+!www/.gitkeep
+*~
+desktop.ini
