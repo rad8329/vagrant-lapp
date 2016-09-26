@@ -32,7 +32,7 @@ Detalles técnicos
 * Redis 3.0.6
 * Beanstalkd 1.10
 
-La carpeta `www` será nuestro `documnetRoot`.
+La carpeta `www` será nuestro `documentRoot`.
 
 Para acceder a la VM, lo podrá hacer así
 
