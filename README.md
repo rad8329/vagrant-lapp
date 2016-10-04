@@ -13,11 +13,11 @@ Requerimientos
 #### Apache
 El servidor Apache estará habiltado en <http://localhost:8788> o por la dirección IP 192.168.7.7
 
-#### MySQL
-Externamente el servidor MySQL estará habiliatdo por el puerto 8889, e internamente en la VM estará habilitado en el puerto usual 3306  o por socket.
+#### PostgreSQL
+Externamente el servidor PostgreSQL está habiliatdo por el puerto 8789, e internamente en la VM estará habilitado en el puerto usual 5432.
 
-`Username:` root
-`Password:` root
+`Username:` postgres
+`Password:` postgres
 
 #### Redis
 
