@@ -4,20 +4,11 @@ class Php7Config
     config.vm.box = "ubuntu/xenial64"
     config.vm.hostname = "php7box"
 
-    # Configure A Private Network IP
-    config.vm.network :private_network, ip: settings["ip"] ||= "192.168.7.7"
-
-    if settings['networking'][0]['public']
-      config.vm.network "public_network", type: "dhcp"
-    end
-
     # Configure A Few VirtualBox Settings
     config.vm.provider "virtualbox" do |vb|
       vb.name = 'php7box'
       vb.customize ["modifyvm", :id, "--memory", settings["memory"] ||= "1024"]
-      vb.customize ["modifyvm", :id, "--cpus", settings["cpus"] ||= "1"]
-      vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
-      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.customize ["modifyvm", :id, "--cpus", settings["cpus"] ||= "1"]      
       vb.customize ["modifyvm", :id, "--audio", "none", "--usb", "off", "--usbehci", "off"]
     end
 

@@ -11,7 +11,7 @@ Requerimientos
 	$ vagrant up
 
 #### Apache
-El servidor Apache estará habiltado en <http://localhost:8788> o por la dirección IP 192.168.7.7
+El servidor Apache estará habiltado en <http://localhost:8788>
 
 #### PostgreSQL
 Externamente el servidor PostgreSQL está habiliatdo por el puerto 8789, e internamente en la VM estará habilitado en el puerto usual 5432.
