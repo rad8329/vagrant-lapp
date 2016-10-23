@@ -14,7 +14,7 @@ class Php7Config
     # Configure A Few VirtualBox Settings
     config.vm.provider "virtualbox" do |vb|
       vb.name = 'php7box'
-      vb.customize ["modifyvm", :id, "--memory", settings["memory"] ||= "2048"]
+      vb.customize ["modifyvm", :id, "--memory", settings["memory"] ||= "1024"]
       vb.customize ["modifyvm", :id, "--cpus", settings["cpus"] ||= "1"]
       vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]

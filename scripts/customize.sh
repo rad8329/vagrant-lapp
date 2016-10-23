@@ -23,7 +23,7 @@ apt-get -y install build-essential binutils-doc git
 apt-get -y install redis-server
 sed -i "s/bind 127.0.0.1/bind 0.0.0.0/g" ${redis_config_file}
 
-# Install Apache
+# Install Beanstalkd
 echo "Installing Beanstalkd"
 apt-get -y install beanstalkd
 
